@@ -421,7 +421,7 @@
     $('#contact-form').on('submit', function (e) {
 
         if (!e.isDefaultPrevented()) {
-            var url = "assets/php/contact.php";
+            var url = "https://formspree.io/f/xnqrnepz";
             $.ajax({
                 type: "POST",
                 url: url,
@@ -438,6 +438,8 @@
                     }
                 }
             });
+	    swal("Thank You!", "You've successfully sent the message!", "success");
+            document.getElementById("contact-form").reset();
             return false;
         }
     	});
