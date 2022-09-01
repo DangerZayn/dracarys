@@ -421,7 +421,7 @@
     $('#contact-form').on('submit', function (e) {
 
         if (!e.isDefaultPrevented()) {
-            var url = "https://formspree.io/f/xnqrnepz";
+            var url = "https://formspree.io/f/mwkzpgze";
             $.ajax({
                 type: "POST",
                 url: url,
